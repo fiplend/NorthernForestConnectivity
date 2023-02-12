@@ -1,0 +1,6 @@
+LandNum	Nhabitats	LandscapeFile	PatchFile	CostMapFile	DynLandFile	SpDistFile
+1	5	R1_5000_Scenario0.asc	R1_5000_Scenario0_patch_generalist.asc	NULL	L1R1S0.txt	NULL
+2	5	R1_5000_Scenario0.asc	R1_5000_Scenario0_patch_generalist.asc	NULL	L1R1S1.txt	NULL
+3	5	R1_5000_Scenario0.asc	R1_5000_Scenario0_patch_generalist.asc	NULL	L1R1S2.txt	NULL
+4	5	R1_5000_Scenario0.asc	R1_5000_Scenario0_patch_generalist.asc	NULL	L1R1S3.txt	NULL
+
