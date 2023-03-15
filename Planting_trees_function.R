@@ -4,9 +4,11 @@ library(igraph)
 library(rgdal)
 library(mosaic)
 library(landscapeR)
-library(rasterVis)
+library(landscapeR)
+library(raster)
 library(stringr)
 library(plyr)
+library(rgdal)
 
 
 # Read in maps
@@ -216,6 +218,10 @@ PlantingTree <-
     Scenario2_new_patch <- Scenario2
     Scenario3_new_patch <- Scenario3
     
+    Scenario1_new_patch[Scenario1_new_patch[] == 2] <- 0
+    Scenario2_new_patch[Scenario2_new_patch[] == 2] <- 0
+    Scenario3_new_patch[Scenario3_new_patch[] == 2] <- 0
+    
     Scenario1[Scenario1[] > 9000] <- 2
     Scenario2[Scenario2[] > 9000] <- 2
     Scenario3[Scenario3[] > 9000] <- 2
@@ -263,6 +269,7 @@ PlantingTree <-
       Scenario4[Scenario4[] == 1] <- 0
       #step 6: plant the trees in suitable places
       Scenario4_new_patch <- Scenario4
+      Scenario4_new_patch[Scenario4_new_patch[] == 2] <- 0
       Scenario4[Scenario4[] > 9000] <- 2
       
       # Now we need to create patch maps
